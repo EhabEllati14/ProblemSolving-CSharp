@@ -1,22 +1,11 @@
-﻿
-//Question 6: count the vowels 
-//HashSet<char> result = new HashSet<char>() { 'a','i','o','e','u'};
-//string str = "aabbnciru";
-//int count = 0;
+﻿using ConsoleApp1;
 
-//if (str.Equals(""))
-//{
-//    Console.WriteLine("Please the string is empty, so there is no any vowels !");
-//}
-//else
-//{
-//    for (int i = 0; i < str.Length; i++)
-//    {
-//        if (result.Contains(str[i]))
-//        {
-//            count++;
+MergeTwoSortedArrays merge = new MergeTwoSortedArrays();
+int [] arr1 = { 1, 5, 7, 10 };
+int[]  arr2 = { 2, 3, 4, 8 ,90,100,110,600};
+int [] result=merge.mergeTwoSortedArray(arr1, arr2);
 
-//        }
-//    }
-//    Console.WriteLine("The number of vowels is : " +count);
-//}
+foreach(int i in result)
+{
+    Console.WriteLine(i);
+}
